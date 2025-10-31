@@ -15,8 +15,8 @@ importers:
         specifier: ^0.1.81
         version: 0.1.81
       '@rollup/plugin-alias':
-        specifier: ^5.1.1
-        version: 5.1.1(rollup@4.52.5)
+        specifier: ^6.0.0
+        version: 6.0.0(rollup@4.52.5)
       '@rollup/plugin-inject':
         specifier: ^5.0.5
         version: 5.0.5(rollup@4.52.5)
@@ -45,8 +45,8 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       pdfjs-dist:
-        specifier: ~5.4.149
-        version: 5.4.149
+        specifier: ~5.4.296
+        version: 5.4.296
       rollup:
         specifier: ^4.52.5
         version: 4.52.5
@@ -982,6 +982,15 @@ packages:
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+
+  '@rollup/plugin-alias@6.0.0':
+    resolution: {integrity: sha512-tPCzJOtS7uuVZd+xPhoy5W4vThe6KWXNmsFCNktaAh5RTqcLiSfT4huPQIXkgJ6YCOjJHvecOAzQxLFhPxKr+g==}
+    engines: {node: '>=20.19.0'}
+    peerDependencies:
+      rollup: '>=4.0.0'
     peerDependenciesMeta:
       rollup:
         optional: true
@@ -2492,8 +2501,8 @@ packages:
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
 
-  pdfjs-dist@5.4.149:
-    resolution: {integrity: sha512-Xe8/1FMJEQPUVSti25AlDpwpUm2QAVmNOpFP0SIahaPIOKBKICaefbzogLdwey3XGGoaP4Lb9wqiw2e9Jqp0LA==}
+  pdfjs-dist@5.4.296:
+    resolution: {integrity: sha512-DlOzet0HO7OEnmUmB6wWGJrrdvbyJKftI1bhMitK7O2N8W2gc757yyYBbINy9IDafXAV9wmKr9t7xsTaNKRG5Q==}
     engines: {node: '>=20.16.0 || >=22.3.0'}
 
   perfect-debounce@2.0.0:
@@ -3791,6 +3800,10 @@ snapshots:
   '@poppinss/exception@1.2.2': {}
 
   '@rollup/plugin-alias@5.1.1(rollup@4.52.5)':
+    optionalDependencies:
+      rollup: 4.52.5
+
+  '@rollup/plugin-alias@6.0.0(rollup@4.52.5)':
     optionalDependencies:
       rollup: 4.52.5
 
@@ -5596,7 +5609,7 @@ snapshots:
 
   pathe@2.0.3: {}
 
-  pdfjs-dist@5.4.149:
+  pdfjs-dist@5.4.296:
     optionalDependencies:
       '@napi-rs/canvas': 0.1.81
 
